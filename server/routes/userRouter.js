@@ -3,7 +3,7 @@ const router = new Router()
 const userConrroller = require('../controlees/userConrroller')
 const authMiddleware = require('../middeleware/authMiddleware')
 
-router.post('/registration', userConrroller.regisration)
+router.post('/registration', userConrroller.registration)
 router.post('/login', userConrroller.login)
 router.get('/auth', authMiddleware,  userConrroller.check)
 
